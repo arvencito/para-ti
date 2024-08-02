@@ -1,0 +1,82 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: rgb(0, 0, 0);
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 185, 226, 0.8);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.heart {
+    font-size: 50px;
+    color: #ff69b4;
+    animation: beat 1s infinite;
+    margin-bottom: 20px;
+}
+
+@keyframes beat {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+button {
+    background-color: #ff40a0;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff1493;
+}
+
+.hidden {
+    display: none;
+}
+
+#imageContainer {
+    margin-top: 20px;
+}
+
+#image {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+#imageText {
+    font-size: 16px;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#finalMessage {
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+}
